@@ -1,0 +1,128 @@
+body{background-image: url(work.jpg) ;
+  background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+
+h1 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 50px;
+  letter-spacing: -1px;
+  color: rgba(255,255,255,0.6);  margin-left: 34%;
+  margin-bottom: 20%;
+  text-align:center;
+  margin-bottom: 1.7%;
+  margin-left: 28%;
+ }
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 4.5s;
+    animation-fill-mode: both;
+animation-iteration-count: 1;}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+header {
+  height: 200vh;
+}
+
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+  
+  /* safari hack */
+  webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+}
+
+.container_solid {
+  background: white;
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;
+  margin-top: 5%;  
+  margin-left: 3.5% ;
+  
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 330%;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(work.jpg) ;
+  background-size: 100vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  text-fill-color : transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(work.jpg) ;
+  background-repeat: no-repeat;
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: white;
+}
+
+button{
+  background-color: #ffffff;
+  margin-left: 50%;
+}
